@@ -1191,16 +1191,16 @@ pub mod C_BaseButton {
 }
 
 pub mod C_BaseCSGrenade {
-    pub const m_bClientPredictDelete: usize = 0x18E0;
-    pub const m_bRedraw: usize = 0x1908;
-    pub const m_bIsHeldByPlayer: usize = 0x1909;
-    pub const m_bPinPulled: usize = 0x190A;
-    pub const m_bJumpThrow: usize = 0x190B;
-    pub const m_eThrowStatus: usize = 0x190C;
-    pub const m_fThrowTime: usize = 0x1910;
-    pub const m_flThrowStrength: usize = 0x1914;
-    pub const m_flThrowStrengthApproach: usize = 0x1918;
-    pub const m_fDropTime: usize = 0x191C;
+    pub const m_bClientPredictDelete: usize = 0x1940;
+    pub const m_bRedraw: usize = 0x1968;
+    pub const m_bIsHeldByPlayer: usize = 0x1969;
+    pub const m_bPinPulled: usize = 0x196A;
+    pub const m_bJumpThrow: usize = 0x196B;
+    pub const m_eThrowStatus: usize = 0x196C;
+    pub const m_fThrowTime: usize = 0x1970;
+    pub const m_flThrowStrength: usize = 0x1974;
+    pub const m_flThrowStrengthApproach: usize = 0x1978;
+    pub const m_fDropTime: usize = 0x197C;
 }
 
 pub mod C_BaseCSGrenadeProjectile {
@@ -1555,17 +1555,17 @@ pub mod C_BulletHitModel {
 }
 
 pub mod C_C4 {
-    pub const m_szScreenText: usize = 0x18E0;
-    pub const m_bombdroppedlightParticleIndex: usize = 0x1900;
-    pub const m_bStartedArming: usize = 0x1904;
-    pub const m_fArmedTime: usize = 0x1908;
-    pub const m_bBombPlacedAnimation: usize = 0x190C;
-    pub const m_bIsPlantingViaUse: usize = 0x190D;
-    pub const m_entitySpottedState: usize = 0x1910;
-    pub const m_nSpotRules: usize = 0x1928;
-    pub const m_bPlayedArmingBeeps: usize = 0x192C;
-    pub const m_bBombPlanted: usize = 0x1933;
-    pub const m_bDroppedFromDeath: usize = 0x1934;
+    pub const m_szScreenText: usize = 0x1940;
+    pub const m_bombdroppedlightParticleIndex: usize = 0x1960;
+    pub const m_bStartedArming: usize = 0x1964;
+    pub const m_fArmedTime: usize = 0x1968;
+    pub const m_bBombPlacedAnimation: usize = 0x196C;
+    pub const m_bIsPlantingViaUse: usize = 0x196D;
+    pub const m_entitySpottedState: usize = 0x1970;
+    pub const m_nSpotRules: usize = 0x1988;
+    pub const m_bPlayedArmingBeeps: usize = 0x198C;
+    pub const m_bBombPlanted: usize = 0x1993;
+    pub const m_bDroppedFromDeath: usize = 0x1994;
 }
 
 pub mod C_CSGOViewModel {
@@ -1735,7 +1735,6 @@ pub mod C_CSGameRules {
     pub const m_nCTTeamIntroVariant: usize = 0xEB0;
     pub const m_bTeamIntroPeriod: usize = 0xEB4;
     pub const m_flLastPerfSampleTime: usize = 0x1E70;
-    pub const m_bSkipNextPerfSample: usize = 0x1E78;
 }
 
 pub mod C_CSGameRulesProxy {
@@ -1976,17 +1975,18 @@ pub mod C_CSWeaponBase {
     pub const m_seqIdle: usize = 0x15E0;
     pub const m_seqFirePrimary: usize = 0x15E4;
     pub const m_seqFireSecondary: usize = 0x15E8;
-    pub const m_iState: usize = 0x1600;
-    pub const m_flCrosshairDistance: usize = 0x1604;
-    pub const m_iAmmoLastCheck: usize = 0x1608;
-    pub const m_iAlpha: usize = 0x160C;
-    pub const m_iScopeTextureID: usize = 0x1610;
-    pub const m_iCrosshairTextureID: usize = 0x1614;
-    pub const m_flGunAccuracyPosition: usize = 0x1618;
-    pub const m_nViewModelIndex: usize = 0x161C;
-    pub const m_bReloadsWithClips: usize = 0x1620;
-    pub const m_flTimeWeaponIdle: usize = 0x1624;
-    pub const m_bFireOnEmpty: usize = 0x1628;
+    pub const m_ClientPreviousWeaponState: usize = 0x1600;
+    pub const m_iState: usize = 0x1604;
+    pub const m_flCrosshairDistance: usize = 0x1608;
+    pub const m_iAmmoLastCheck: usize = 0x160C;
+    pub const m_iAlpha: usize = 0x1610;
+    pub const m_iScopeTextureID: usize = 0x1614;
+    pub const m_iCrosshairTextureID: usize = 0x1618;
+    pub const m_flGunAccuracyPosition: usize = 0x161C;
+    pub const m_nViewModelIndex: usize = 0x1620;
+    pub const m_bReloadsWithClips: usize = 0x1624;
+    pub const m_flTimeWeaponIdle: usize = 0x1628;
+    pub const m_bFireOnEmpty: usize = 0x162C;
     pub const m_OnPlayerPickup: usize = 0x1630;
     pub const m_weaponMode: usize = 0x1658;
     pub const m_flTurningInaccuracyDelta: usize = 0x165C;
@@ -2025,19 +2025,19 @@ pub mod C_CSWeaponBase {
     pub const m_smokeAttachments: usize = 0x177C;
     pub const m_lastSmokeTime: usize = 0x1780;
     pub const m_flLastClientFireBulletTime: usize = 0x1784;
-    pub const m_IronSightController: usize = 0x17E0;
-    pub const m_iIronSightMode: usize = 0x1890;
-    pub const m_flLastLOSTraceFailureTime: usize = 0x18A0;
-    pub const m_iNumEmptyAttacks: usize = 0x18A4;
+    pub const m_IronSightController: usize = 0x1840;
+    pub const m_iIronSightMode: usize = 0x18F0;
+    pub const m_flLastLOSTraceFailureTime: usize = 0x1900;
+    pub const m_iNumEmptyAttacks: usize = 0x1904;
 }
 
 pub mod C_CSWeaponBaseGun {
-    pub const m_zoomLevel: usize = 0x18E0;
-    pub const m_iBurstShotsRemaining: usize = 0x18E4;
-    pub const m_iSilencerBodygroup: usize = 0x18E8;
-    pub const m_silencedModelIndex: usize = 0x18F8;
-    pub const m_inPrecache: usize = 0x18FC;
-    pub const m_bNeedsBoltAction: usize = 0x18FD;
+    pub const m_zoomLevel: usize = 0x1940;
+    pub const m_iBurstShotsRemaining: usize = 0x1944;
+    pub const m_iSilencerBodygroup: usize = 0x1948;
+    pub const m_silencedModelIndex: usize = 0x1958;
+    pub const m_inPrecache: usize = 0x195C;
+    pub const m_bNeedsBoltAction: usize = 0x195D;
 }
 
 pub mod C_Chicken {
@@ -2520,8 +2520,8 @@ pub mod C_Fish {
 }
 
 pub mod C_Fists {
-    pub const m_bPlayingUninterruptableAct: usize = 0x18E0;
-    pub const m_nUninterruptableActivity: usize = 0x18E4;
+    pub const m_bPlayingUninterruptableAct: usize = 0x1940;
+    pub const m_nUninterruptableActivity: usize = 0x1944;
 }
 
 pub mod C_FogController {
@@ -2767,7 +2767,7 @@ pub mod C_MapVetoPickController {
 }
 
 pub mod C_Melee {
-    pub const m_flThrowAt: usize = 0x18E0;
+    pub const m_flThrowAt: usize = 0x1940;
 }
 
 pub mod C_MolotovProjectile {
@@ -3402,16 +3402,16 @@ pub mod C_VoteController {
 }
 
 pub mod C_WeaponBaseItem {
-    pub const m_SequenceCompleteTimer: usize = 0x18E0;
-    pub const m_bRedraw: usize = 0x18F8;
+    pub const m_SequenceCompleteTimer: usize = 0x1940;
+    pub const m_bRedraw: usize = 0x1958;
 }
 
 pub mod C_WeaponShield {
-    pub const m_flDisplayHealth: usize = 0x1900;
+    pub const m_flDisplayHealth: usize = 0x1960;
 }
 
 pub mod C_WeaponTaser {
-    pub const m_fFireTime: usize = 0x1900;
+    pub const m_fFireTime: usize = 0x1960;
 }
 
 pub mod C_fogplayerparams_t {

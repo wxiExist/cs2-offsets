@@ -1189,16 +1189,16 @@ public static class C_BaseButton {
 }
 
 public static class C_BaseCSGrenade {
-    public const nint m_bClientPredictDelete = 0x18E0;
-    public const nint m_bRedraw = 0x1908;
-    public const nint m_bIsHeldByPlayer = 0x1909;
-    public const nint m_bPinPulled = 0x190A;
-    public const nint m_bJumpThrow = 0x190B;
-    public const nint m_eThrowStatus = 0x190C;
-    public const nint m_fThrowTime = 0x1910;
-    public const nint m_flThrowStrength = 0x1914;
-    public const nint m_flThrowStrengthApproach = 0x1918;
-    public const nint m_fDropTime = 0x191C;
+    public const nint m_bClientPredictDelete = 0x1940;
+    public const nint m_bRedraw = 0x1968;
+    public const nint m_bIsHeldByPlayer = 0x1969;
+    public const nint m_bPinPulled = 0x196A;
+    public const nint m_bJumpThrow = 0x196B;
+    public const nint m_eThrowStatus = 0x196C;
+    public const nint m_fThrowTime = 0x1970;
+    public const nint m_flThrowStrength = 0x1974;
+    public const nint m_flThrowStrengthApproach = 0x1978;
+    public const nint m_fDropTime = 0x197C;
 }
 
 public static class C_BaseCSGrenadeProjectile {
@@ -1553,17 +1553,17 @@ public static class C_BulletHitModel {
 }
 
 public static class C_C4 {
-    public const nint m_szScreenText = 0x18E0;
-    public const nint m_bombdroppedlightParticleIndex = 0x1900;
-    public const nint m_bStartedArming = 0x1904;
-    public const nint m_fArmedTime = 0x1908;
-    public const nint m_bBombPlacedAnimation = 0x190C;
-    public const nint m_bIsPlantingViaUse = 0x190D;
-    public const nint m_entitySpottedState = 0x1910;
-    public const nint m_nSpotRules = 0x1928;
-    public const nint m_bPlayedArmingBeeps = 0x192C;
-    public const nint m_bBombPlanted = 0x1933;
-    public const nint m_bDroppedFromDeath = 0x1934;
+    public const nint m_szScreenText = 0x1940;
+    public const nint m_bombdroppedlightParticleIndex = 0x1960;
+    public const nint m_bStartedArming = 0x1964;
+    public const nint m_fArmedTime = 0x1968;
+    public const nint m_bBombPlacedAnimation = 0x196C;
+    public const nint m_bIsPlantingViaUse = 0x196D;
+    public const nint m_entitySpottedState = 0x1970;
+    public const nint m_nSpotRules = 0x1988;
+    public const nint m_bPlayedArmingBeeps = 0x198C;
+    public const nint m_bBombPlanted = 0x1993;
+    public const nint m_bDroppedFromDeath = 0x1994;
 }
 
 public static class C_CSGOViewModel {
@@ -1733,7 +1733,6 @@ public static class C_CSGameRules {
     public const nint m_nCTTeamIntroVariant = 0xEB0;
     public const nint m_bTeamIntroPeriod = 0xEB4;
     public const nint m_flLastPerfSampleTime = 0x1E70;
-    public const nint m_bSkipNextPerfSample = 0x1E78;
 }
 
 public static class C_CSGameRulesProxy {
@@ -1974,17 +1973,18 @@ public static class C_CSWeaponBase {
     public const nint m_seqIdle = 0x15E0;
     public const nint m_seqFirePrimary = 0x15E4;
     public const nint m_seqFireSecondary = 0x15E8;
-    public const nint m_iState = 0x1600;
-    public const nint m_flCrosshairDistance = 0x1604;
-    public const nint m_iAmmoLastCheck = 0x1608;
-    public const nint m_iAlpha = 0x160C;
-    public const nint m_iScopeTextureID = 0x1610;
-    public const nint m_iCrosshairTextureID = 0x1614;
-    public const nint m_flGunAccuracyPosition = 0x1618;
-    public const nint m_nViewModelIndex = 0x161C;
-    public const nint m_bReloadsWithClips = 0x1620;
-    public const nint m_flTimeWeaponIdle = 0x1624;
-    public const nint m_bFireOnEmpty = 0x1628;
+    public const nint m_ClientPreviousWeaponState = 0x1600;
+    public const nint m_iState = 0x1604;
+    public const nint m_flCrosshairDistance = 0x1608;
+    public const nint m_iAmmoLastCheck = 0x160C;
+    public const nint m_iAlpha = 0x1610;
+    public const nint m_iScopeTextureID = 0x1614;
+    public const nint m_iCrosshairTextureID = 0x1618;
+    public const nint m_flGunAccuracyPosition = 0x161C;
+    public const nint m_nViewModelIndex = 0x1620;
+    public const nint m_bReloadsWithClips = 0x1624;
+    public const nint m_flTimeWeaponIdle = 0x1628;
+    public const nint m_bFireOnEmpty = 0x162C;
     public const nint m_OnPlayerPickup = 0x1630;
     public const nint m_weaponMode = 0x1658;
     public const nint m_flTurningInaccuracyDelta = 0x165C;
@@ -2023,19 +2023,19 @@ public static class C_CSWeaponBase {
     public const nint m_smokeAttachments = 0x177C;
     public const nint m_lastSmokeTime = 0x1780;
     public const nint m_flLastClientFireBulletTime = 0x1784;
-    public const nint m_IronSightController = 0x17E0;
-    public const nint m_iIronSightMode = 0x1890;
-    public const nint m_flLastLOSTraceFailureTime = 0x18A0;
-    public const nint m_iNumEmptyAttacks = 0x18A4;
+    public const nint m_IronSightController = 0x1840;
+    public const nint m_iIronSightMode = 0x18F0;
+    public const nint m_flLastLOSTraceFailureTime = 0x1900;
+    public const nint m_iNumEmptyAttacks = 0x1904;
 }
 
 public static class C_CSWeaponBaseGun {
-    public const nint m_zoomLevel = 0x18E0;
-    public const nint m_iBurstShotsRemaining = 0x18E4;
-    public const nint m_iSilencerBodygroup = 0x18E8;
-    public const nint m_silencedModelIndex = 0x18F8;
-    public const nint m_inPrecache = 0x18FC;
-    public const nint m_bNeedsBoltAction = 0x18FD;
+    public const nint m_zoomLevel = 0x1940;
+    public const nint m_iBurstShotsRemaining = 0x1944;
+    public const nint m_iSilencerBodygroup = 0x1948;
+    public const nint m_silencedModelIndex = 0x1958;
+    public const nint m_inPrecache = 0x195C;
+    public const nint m_bNeedsBoltAction = 0x195D;
 }
 
 public static class C_Chicken {
@@ -2518,8 +2518,8 @@ public static class C_Fish {
 }
 
 public static class C_Fists {
-    public const nint m_bPlayingUninterruptableAct = 0x18E0;
-    public const nint m_nUninterruptableActivity = 0x18E4;
+    public const nint m_bPlayingUninterruptableAct = 0x1940;
+    public const nint m_nUninterruptableActivity = 0x1944;
 }
 
 public static class C_FogController {
@@ -2765,7 +2765,7 @@ public static class C_MapVetoPickController {
 }
 
 public static class C_Melee {
-    public const nint m_flThrowAt = 0x18E0;
+    public const nint m_flThrowAt = 0x1940;
 }
 
 public static class C_MolotovProjectile {
@@ -3400,16 +3400,16 @@ public static class C_VoteController {
 }
 
 public static class C_WeaponBaseItem {
-    public const nint m_SequenceCompleteTimer = 0x18E0;
-    public const nint m_bRedraw = 0x18F8;
+    public const nint m_SequenceCompleteTimer = 0x1940;
+    public const nint m_bRedraw = 0x1958;
 }
 
 public static class C_WeaponShield {
-    public const nint m_flDisplayHealth = 0x1900;
+    public const nint m_flDisplayHealth = 0x1960;
 }
 
 public static class C_WeaponTaser {
-    public const nint m_fFireTime = 0x1900;
+    public const nint m_fFireTime = 0x1960;
 }
 
 public static class C_fogplayerparams_t {
