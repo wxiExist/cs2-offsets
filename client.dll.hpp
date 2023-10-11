@@ -1612,9 +1612,9 @@ namespace C_CSGO_PreviewModel {
 }
 
 namespace C_CSGO_PreviewPlayer {
-    constexpr std::ptrdiff_t m_animgraph = 0x22A0;
-    constexpr std::ptrdiff_t m_animgraphCharacterModeString = 0x22A8;
-    constexpr std::ptrdiff_t m_flInitialModelScale = 0x22B0;
+    constexpr std::ptrdiff_t m_animgraph = 0x22A8;
+    constexpr std::ptrdiff_t m_animgraphCharacterModeString = 0x22B0;
+    constexpr std::ptrdiff_t m_flInitialModelScale = 0x22B8;
 }
 
 namespace C_CSGO_TeamPreviewCamera {
@@ -1793,10 +1793,10 @@ namespace C_CSPlayerPawn {
     constexpr std::ptrdiff_t m_vRagdollDamagePosition = 0x1D04;
     constexpr std::ptrdiff_t m_szRagdollDamageWeaponName = 0x1D10;
     constexpr std::ptrdiff_t m_bRagdollDamageHeadshot = 0x1D50;
-    constexpr std::ptrdiff_t m_bLastHeadBoneTransformIsValid = 0x2270;
-    constexpr std::ptrdiff_t m_lastLandTime = 0x2274;
-    constexpr std::ptrdiff_t m_qDeathEyeAngles = 0x2290;
-    constexpr std::ptrdiff_t m_bSkipOneHeadConstraintUpdate = 0x229C;
+    constexpr std::ptrdiff_t m_bLastHeadBoneTransformIsValid = 0x2278;
+    constexpr std::ptrdiff_t m_lastLandTime = 0x227C;
+    constexpr std::ptrdiff_t m_qDeathEyeAngles = 0x2298;
+    constexpr std::ptrdiff_t m_bSkipOneHeadConstraintUpdate = 0x22A4;
 }
 
 namespace C_CSPlayerPawnBase {

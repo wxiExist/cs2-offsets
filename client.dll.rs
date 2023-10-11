@@ -1610,9 +1610,9 @@ pub mod C_CSGO_PreviewModel {
 }
 
 pub mod C_CSGO_PreviewPlayer {
-    pub const m_animgraph: usize = 0x22A0;
-    pub const m_animgraphCharacterModeString: usize = 0x22A8;
-    pub const m_flInitialModelScale: usize = 0x22B0;
+    pub const m_animgraph: usize = 0x22A8;
+    pub const m_animgraphCharacterModeString: usize = 0x22B0;
+    pub const m_flInitialModelScale: usize = 0x22B8;
 }
 
 pub mod C_CSGO_TeamPreviewCamera {
@@ -1791,10 +1791,10 @@ pub mod C_CSPlayerPawn {
     pub const m_vRagdollDamagePosition: usize = 0x1D04;
     pub const m_szRagdollDamageWeaponName: usize = 0x1D10;
     pub const m_bRagdollDamageHeadshot: usize = 0x1D50;
-    pub const m_bLastHeadBoneTransformIsValid: usize = 0x2270;
-    pub const m_lastLandTime: usize = 0x2274;
-    pub const m_qDeathEyeAngles: usize = 0x2290;
-    pub const m_bSkipOneHeadConstraintUpdate: usize = 0x229C;
+    pub const m_bLastHeadBoneTransformIsValid: usize = 0x2278;
+    pub const m_lastLandTime: usize = 0x227C;
+    pub const m_qDeathEyeAngles: usize = 0x2298;
+    pub const m_bSkipOneHeadConstraintUpdate: usize = 0x22A4;
 }
 
 pub mod C_CSPlayerPawnBase {

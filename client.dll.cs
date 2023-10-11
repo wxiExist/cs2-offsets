@@ -1608,9 +1608,9 @@ public static class C_CSGO_PreviewModel {
 }
 
 public static class C_CSGO_PreviewPlayer {
-    public const nint m_animgraph = 0x22A0;
-    public const nint m_animgraphCharacterModeString = 0x22A8;
-    public const nint m_flInitialModelScale = 0x22B0;
+    public const nint m_animgraph = 0x22A8;
+    public const nint m_animgraphCharacterModeString = 0x22B0;
+    public const nint m_flInitialModelScale = 0x22B8;
 }
 
 public static class C_CSGO_TeamPreviewCamera {
@@ -1789,10 +1789,10 @@ public static class C_CSPlayerPawn {
     public const nint m_vRagdollDamagePosition = 0x1D04;
     public const nint m_szRagdollDamageWeaponName = 0x1D10;
     public const nint m_bRagdollDamageHeadshot = 0x1D50;
-    public const nint m_bLastHeadBoneTransformIsValid = 0x2270;
-    public const nint m_lastLandTime = 0x2274;
-    public const nint m_qDeathEyeAngles = 0x2290;
-    public const nint m_bSkipOneHeadConstraintUpdate = 0x229C;
+    public const nint m_bLastHeadBoneTransformIsValid = 0x2278;
+    public const nint m_lastLandTime = 0x227C;
+    public const nint m_qDeathEyeAngles = 0x2298;
+    public const nint m_bSkipOneHeadConstraintUpdate = 0x22A4;
 }
 
 public static class C_CSPlayerPawnBase {
